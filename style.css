@@ -1,0 +1,196 @@
+/* *{
+    border: 1px solid red;
+} */
+
+:root {
+    --bs-pink: rgb(255, 49, 71);
+    --bs-grey: rgb(250, 250, 250);
+}
+
+.text-pink {
+    color: var(--bs-pink);
+}
+
+.bg-pink {
+    background: var(--bs-pink);
+}
+
+.bg-grey {
+    background: var(--bs-grey);
+}
+
+.btn-open-popup {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: var(--bs-pink);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.overlay-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup-box {
+    background: #fff;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 450px;
+    height: 320px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+    text-align: left;
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bs-pink);
+    color: #fff;
+}
+
+
+
+
+
+
+
+.owl-carousel {
+    margin-top: 20px;
+}
+.owl-carousel img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-dots {
+    position: absolute;
+    left: 10px; /* Adjust left position as needed */
+    bottom: 10px; /* Adjust bottom position as needed */
+    
+}
+
+
+
+/* Animation for popup */
+.overlay-container.show {
+    display: flex;
+    opacity: 1;
+}
+
+.why:hover {
+    outline-color: transparent;
+    outline-style: solid;
+    background-color: var(--bs-pink);
+}
+
+.svg1 {
+    width: 100px;
+}
+
+.svg2 {
+    width: 108px;
+}
+
+.svg3 {
+    width: 90.5px;
+}
+
+.svg4 {
+    width: 100px;
+}
+
+
+
+.growth {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    /* add transition effect */
+}
+
+.growth:hover {
+    background-color: #ffffff;
+    /* change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* add shadow on hover */
+}
+
+.icon {
+    font-size: 24px;
+    color: #ff0000;
+    /* red icon */
+}
+
+.growth span {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.growth p {
+    font-size: 16px;
+    color: #666;
+}
+
+.jannat {
+    background: url(./images/Quotemarks-left.png)no-repeat;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position:0px 0px ;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

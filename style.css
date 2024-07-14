@@ -1,5 +1,5 @@
 /* *{
-    border: 1px solid red;
+    border: 1px solid yellow;
 } */
 
 :root {
@@ -89,7 +89,34 @@
     color: #fff;
 }
 
-
+.owl-carousel .item {
+    position: relative; /* make the item container relative */
+  }
+  
+  .owl-carousel .item img {
+    width: 100%; /* make the image full width */
+    height: 100%; /* set a fixed height for the image */
+    object-fit: cover; /* make the image cover the entire container */
+  }
+  
+  .owl-carousel .item .image-text {
+    position: absolute; /* make the text absolute */
+    top: 50%; /* center the text vertically */
+    left: 50%; /* center the text horizontally */
+    transform: translate(-50%, -50%); /* adjust the text position */
+    color: #fff; /* set the text color */
+    font-size: 24px; /* set the text font size */
+    opacity: 0; /* hide the text initially */
+    transition: opacity 0.3s ease; /* add transition effect */
+    background: var(--bs-pink);
+    width: 315px;
+    height: 449px;
+    border-radius: 3px;
+  }
+  
+  .owl-carousel .item:hover .image-text {
+    opacity: 1; /* show the text on hover */
+  }
 
 
 

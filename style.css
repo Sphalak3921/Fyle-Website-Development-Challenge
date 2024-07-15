@@ -28,6 +28,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
 }
 
 
@@ -208,6 +209,9 @@
     background-repeat: no-repeat;
     background-position:0px 0px ;
 }
+.logos{
+    padding: 100px;
+}
 
 /* Keyframes for fadeInUp animation */
 @keyframes fadeInUp {
@@ -221,3 +225,16 @@
         transform: translateY(0);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .btn-open-popup {
+        width: 100%;
+    }
+    .popup-box {
+        width: 305px;
+        height: 320px;
+    }
+    .logos{
+        padding: 10px;
+    }
+  }
